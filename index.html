@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./extension/assets/icon/icon_32.png" type="image/x-icon">
+    <title>InternetChecker -- InstallMenu</title>
+    <style>
+        body {
+            font-family: Consolas;
+        }
+        .install-addon-btn {
+            width: fit-content;
+            height: 35px;
+            font-size: 15px;
+            font-family: Consolas;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">InternetChecker InstallMenu</h1>
+    <button class="install-addon-btn" id="install_addon_btn">Install Addon</button>
+    <div class="content-directory">
+        <h2>Directory Content</h2>
+        <li>extension/</li>
+        <ul>
+            <li>
+                <a href="./extension/assets/">assets/</a>
+                <ul>
+                    <li>
+                        <a href="./extension/assets/icon/">icon/</a>
+                        <ul>
+                            <li><a href="./extension/assets/icon/icon_128.png">icon_128.png</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./extension/assets/icon/icon_128.svg">icon_128.svg</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./extension/assets/icon/icon_64.png">icon_64.png</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./extension/assets/icon/icon_64.svg">icon_64.svg</a></li>
+                        </ul> 
+                        <ul>
+                            <li><a href="./extension/assets/icon/icon_32.png">icon_32.png</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./extension/assets/icon/icon_32.svg">icon_32.svg</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="./extension/assets/img/">img/</a></li>
+                    <ul>
+                        <li><a href="./extension/assets/img/connection_status_disconnected.svg">connection_status_disconnected.svg</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./extension/assets/img/connection_status_connected.svg">connection_status_connected.svg</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./extension/assets/img/loading_img.svg">loading_img.svg</a></li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="./extension/CSS/">CSS/</a>
+                        <ul><li><a href="./extension/CSS/style.css">style.css</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="./extension/JS/">JS/</a>
+                        <ul><li><a href="./extension/JS/app.js">app.js</a></li></ul>
+                    </li>
+                    <li><a href="./extension/index.html">index.html</a></li>
+                    <li><a href="./extension/manifest.json">manifest.json</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        let install_addon_btn = document.querySelector('#install_addon_btn');
+        let base_url = `${document.location.origin}${document.location.pathname}`;
+
+        install_addon_btn.innerText = `Update / Install Addon by ${base_url}extension.crx file.`;
+
+        install_addon_btn.addEventListener('click', ()=>{
+            window.open('./extension.crx', '_blank')
+        });
+    </script>
+</body>
+</html>

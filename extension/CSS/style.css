@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    height: 100%;
+    animation: fade-in ease-in 0.5s;
+}
+.main-title {
+    font-size: 20px;
+    font-weight: 100;
+}
+.main-img {
+    height: 20px;
+    width: 20px;
+}
+button {
+    width: 150px;
+    height: 25px;
+    background: rgb(55, 55, 55, 0.520);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.btn-menu {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.internet-status-box-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.internet-text {
+    color: rgb(0, 155, 0);
+    text-align: center;
+    font-weight: 100;
+}
+.no-internet-text {
+    color: rgb(155, 0, 0);
+    text-align: center;
+    font-weight: 100;
+}
+.loading-text-box {
+    text-align: center;
+    font-size: 15px;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.loading-img {
+    animation: rotate ease-in-out 2s infinite;
+}
+.advice-title {
+    font-weight: 100;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+}

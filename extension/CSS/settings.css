@@ -1,0 +1,32 @@
+body {
+    height: 100%;
+    width: 350px;
+    padding: 1.5px;
+    margin: 5px;
+    border-radius: 15px;
+}
+.app-container {
+    height: 150px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(155, 155, 155);
+}
+.back-arrow {
+    background-color: rgb(155, 155, 155);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow ease-in-out 0.5s;
+}
+.back-arrow:hover {
+    box-shadow: 0px 0px 15px rgb(55, 55, 55);
+}
+.titles {
+    margin-left: 15px;
+}
+.subtitles {
+    margin-left: 15px;
+}
+.main-title {
+    font-size: 20px;
+    font-weight: 100;
+}

@@ -1,0 +1,21 @@
+{
+    "author": "Boubajoker",
+    "background": {
+        "scripts": [ "JS/background.js" ]
+    },
+    "incognito": "split",
+    "manifest_version": 2,
+    "name": "InternetChecker",
+    "permissions": ["webRequest"],
+    "version": "0.0.1",
+    "browser_action" : {
+        "default_popup" : "./index.html",
+        "default_title" : "Click here to open InternetChecker"
+    },
+    "description": "An extension to check your internet connection. (Early alpha)",
+    "icons": {
+       "128": "./assets/icon/icon_128.png",
+       "32": "./assets/icon/icon_32.png",
+       "64": "./assets/icon/icon_64.png"
+    }
+}
